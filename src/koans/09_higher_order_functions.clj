@@ -9,7 +9,7 @@
   (= [1 4 9 16 25] (map (fn [x] (* x x)) [1 2 3 4 5]))
 
   "Or use the names of existing functions"
-  (= (false false true false) (map nil? [:a :b nil :c :d]))
+  (= [false false true false false] (map nil? [:a :b nil :c :d]))
 
   "A filter can be strong"
   (= '() (filter (fn [x] false) '(:anything :goes :here)))
